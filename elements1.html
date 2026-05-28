@@ -1,119 +1,113 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Permainan - Fluidoku</title>
+		<title>Panduan Host - Fluidoku</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
-		<style>
-			/* Memaksa pembagian ubin pas 50% di tengah pada layar desktop */
-			#two.tiles {
-				display: flex !important;
-				flex-wrap: wrap !important;
-			}
-			#two.tiles article {
-				width: 50% !important;
-				max-width: 50% !important;
-				min-width: 50% !important;
-			}
-			/* Membuat teks "Fluida Statis" & "Fluida Dinamis" berada tepat di tengah-tengah ubin */
-			#two.tiles article .major {
-				padding: 0 !important;
-				top: 50% !important;
-				left: 50% !important;
-				transform: translate(-50%, -50%) !important;
-				margin: 0 !important;
-				width: 100% !important;
-				text-align: center !important;
-			}
-			/* Menghilangkan efek garis bawah bawaan template agar teks lebih bersih di tengah */
-			#two.tiles article .major h3 a::after {
-				display: none !important;
-			}
-			/* Agar tampilan tetap responsif dan otomatis menumpuk ke bawah saat dibuka di HP */
-			@media screen and (max-width: 768px) {
-				#two.tiles article {
-					width: 100% !important;
-					max-width: 100% !important;
-					min-width: 100% !important;
-				}
-			}
-		</style>
 	</head>
 	<body class="is-preload">
 
-		<div id="wrapper">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-				<header id="header" class="alt style2">
+				<!-- Header -->
+					<header id="header">
 						<a href="index.html" class="logo"><strong>Fluidoku</strong></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
 					</header>
 
-				<nav id="menu">
+				<!-- Menu -->
+					<nav id="menu">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="landing.html">Panduan Pengguna</a></li>
 							<li><a href="generic.html">Permainan</a></li>
 						</ul>
+						<ul class="actions stacked">
+							<li><a href="landing.html" class="button fit">Kembali Ke Panduan</a></li>
+							<li><a href="generic.html" class="button fit">Ke Permainan</a></li>
+						</ul>
 					</nav>
 
-				<section id="banner" class="style2">
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
 						<div class="inner">
 							<span class="image">
 								<img src="banner.png" alt="" />
 							</span>
 							<header class="major">
-								<h1>Permainan FluiDoku</h1>
+								<h1>Panduan Host</h1>
 							</header>
 							<div class="content">
 							</div>
 						</div>
 					</section>
+				
+				<!-- Main -->
+					<div id="main" class="alt">
 
-				<div id="main">
-
-						<section id="one">
+						<!-- One -->
+							<section id="one">
 								<div class="inner">
-									<p>Sudah membaca panduan?<br/>
-									Jika belum, baca dulu yuk!<a href="landing.html"> PANDUAN</a><br/>
-									Kalau sudah, ayo bermain!<a href="#two"> Bermain Sekarang</a></p>
-								</div>
-							</section>
 
-						<section id="two" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/statis2.png" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="https://funphysics01.github.io/fluidokustatis/" class="link">Fluida Statis</a></h3>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/dinamis2.png" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="https://funphysics01.github.io/fluidokudinamis/" class="link">Fluida Dinamis</a></h3>
-									</header>
-								</article>
-							</section>
-					</div>
+									<p>Begitu memilih mode ini, Anda akan membuat ruang bermain (room) baru dengan kode khusus.
+									   Kode tersebut dapat digunakan untuk mengundang orang lain ke permainanmu.
+									</p>
+									<p>Sebagai pemilik room, Anda memiliki kendali penuh di Ruang Tunggu.<br\> 
+										Anda bisa memantau siapa saja pemain yang sudah bergabung, melihat jumlah pemain yang terhubung, serta memulai dan mengakhiri permainan.</p>
+									<p>Baca panduan di bawah ini untuk membuat ruang bermain baru.</p>
+									
+									<!-- Content -->
+										<div class="row">
+											<div class="col-4 col-12-medium">
+												<h3>Membuat Permainan Baru</h3>
+												<ol>	
+													<li>Pada halaman awal, pilih menu "BUAT PERMAINAN BARU"</li>
+													<div class="col-4"><span class="image fit"><img src="images/home.png" alt="" /></span></div>
+													<li>Masukan nama, kemudian tekan menu "BUAT & MASUK"</li>
+													<div class="col-4"><span class="image fit"><img src="images/buatroom.png" alt="" /></span></div>
+													<li>Di Ruang Tunggu terdapat kode yang bisa digunakan untuk mengundang orang lain bergabung ke permainan.</li>
+										   	   		<li>Setelah pemain lain bergabung, Anda dapat memulai permainan dengan menu “MULAI PERMAINAN”.</li>
+													<div class="col-4"><span class="image fit"><img src="images/rthost.png" alt="" /></span></div>
+												</ol>
+											</div>
+											<div class="col-4 col-12-medium">
+												<h3>Dalam Permainan</h3>
+												<ol>
+													<li>Host dapat memilih untuk ikut bermain aktif atau hanya sebagai pemegang kontrol.</li>
+													<li>Jika bermain aktif, Anda dapat memilih kotak dan mengisinya dengan angka 1-6.</li>
+													<div class="col-4"><span class="image fit"><img src="images/angka.png" alt="" /></span></div>
+													<li>Jika mendapatkan soal fluida setelah menjawab angka dengan benar, Anda dapat menjawab soal fluida atau melewatinya dengan tombol “BATAL” (namun akan kehilangan kotak tersebut dan skor minus).</li>
+													<div class="col-4"><span class="image fit"><img src="images/soal.png" alt="" /></span></div>
+													<li>Kotak yang telah diisi oleh Pemain lain tidak dapat diisi kembali.</li>
+												</ol>
+											</div>
+											<div class="col-4 col-12-medium">
+												<h3>Mengakhiri Permainan</h3>
+												<ol>
+													<li>Setelah semua kotak terisi, Anda dapat mengakhiri permainan dengan tombol “SELESAI”.</li>
+													<li>Untuk mendapatkan rekap nama pemain, skor, dan soal yang di jawab pemain, Anda dapat menekan tombol “REKAP” untuk mengunduh file.</li>
+													<li>Sebelum menutup permainan, pastikan Anda sudah menekan tombol “RESET” untuk mengakhiri sesi permainan tersebut.</li>
+													<div class="col-4"><span class="image fit"><img src="images/selesai.png" alt="" /></span></div>
+												</ol>
+											</div>
+										</div>
+									<hr class="major" />
 
-				<footer id="footer">
-						<div class="inner">
-							<ul class="copyright">
-								<li>&copy; funphysics01</li>
-							</ul>
-						</div>
-					</footer>
+									<!-- Elements -->
+										<ul class="actions small">
+											<li><a href="landing.html" class="button primary small">Kembali ke Panduan</a></li>
+											<li><a href="generic.html" class="button primary small">Lanjut ke Permainan</a></li>
+										</ul>
 			</div>
 
-		<script src="assets/js/jquery.min.js"></script>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
